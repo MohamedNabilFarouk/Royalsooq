@@ -1,0 +1,106 @@
+[2021-01-04 16:48:24] local.ERROR: Undefined offset: 0 {"userId":3,"exception":"[object] (ErrorException(code: 0): Undefined offset: 0 at E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php:1290)
+[stacktrace]
+#0 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php(1290): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined offse...', 'E:\\\\Billy\\\\larave...', 1290, Array)
+#1 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\app\\Http\\Controllers\\ShopController.php(92): Illuminate\\Support\\Collection->offsetGet(0)
+#2 [internal function]: App\\Http\\Controllers\\ShopController->show('profile.html')
+#3 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
+#4 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('show', Array)
+#5 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\ShopController), 'show')
+#6 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(176): Illuminate\\Routing\\Route->runController()
+#7 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(681): Illuminate\\Routing\\Route->run()
+#8 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#9 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\mcamara\\laravel-localization\\src\\Mcamara\\LaravelLocalization\\Middleware\\LaravelLocalizationViewPath.php(33): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#10 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Mcamara\\LaravelLocalization\\Middleware\\LaravelLocalizationViewPath->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#11 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\mcamara\\laravel-localization\\src\\Mcamara\\LaravelLocalization\\Middleware\\LaravelLocalizationRedirectFilter.php(45): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Mcamara\\LaravelLocalization\\Middleware\\LaravelLocalizationRedirectFilter->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#13 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\mcamara\\laravel-localization\\src\\Mcamara\\LaravelLocalization\\Middleware\\LocaleSessionRedirect.php(32): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Mcamara\\LaravelLocalization\\Middleware\\LocaleSessionRedirect->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#15 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\avored\\framework\\src\\Support\\Middleware\\AvoRedCore.php(36): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): AvoRed\\Framework\\Support\\Middleware\\AvoRedCore->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(76): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(56): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(66): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(683): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#31 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(658): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#32 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(624): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#33 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(613): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#34 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(170): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#35 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#36 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(63): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#46 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#47 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(145): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#48 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#49 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#50 E:\\Billy\\laravel_volcano_projects\\Royal-details\
+ew_royal\\server.php(21): require_once('E:\\\\Billy\\\\larave...')
+#51 {main}
+"} 
